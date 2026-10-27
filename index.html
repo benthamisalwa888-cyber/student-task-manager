@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Student Task Manager</h1>
+            <p>Organise tes études, atteins tes objectifs !</p>
+        </header>
+
+        <form id="taskForm">
+            <input type="text" id="taskInput"
+                   placeholder="Ex : Réviser Java"
+                   required>
+
+            <input type="date" id="taskDate" required>
+
+            <button type="submit">Ajouter une tâche</button>
+        </form>
+
+        <div class="stats">
+            <p>Total : <span id="totalTasks">0</span></p>
+            <p>Terminées : <span id="completedTasks">0</span></p>
+        </div>
+
+        <h2>Mes tâches</h2>
+        <ul id="taskList"></ul>
+
+        <p id="emptyMessage">Aucune tâche pour le moment.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
